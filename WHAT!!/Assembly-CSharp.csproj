@@ -58,6 +58,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Water.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
+    <Compile Include="Assets\Player\VaultingandClimbing.cs" />
+    <Compile Include="Assets\Player\MovementScript.cs" />
+    <Compile Include="Assets\Player\CameraScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
