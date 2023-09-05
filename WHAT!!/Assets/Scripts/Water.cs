@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Water : MonoBehaviour
 {
-    private float speed = 0.2f;
+    private float speed = 0.12f;
 
     void LateUpdate()
     {
