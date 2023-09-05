@@ -1,0 +1,538 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.29f1 (204d6dc9ae1c) revision 2116973'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16302 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+O:\AIE Unity\APPS\2021.3.29f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+O:/AIE Unity/Repo/WHAT!/WHAT!!
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56395
+Successfully changed project path to: O:/AIE Unity/Repo/WHAT!/WHAT!!
+O:/AIE Unity/Repo/WHAT!/WHAT!!
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [7096] Host "[IP] 192.168.0.103 [Port] 0 [Flags] 2 [Guid] 351065466 [EditorId] 351065466 [Version] 1048832 [Id] WindowsEditor(7,Nathans-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [7096] Host "[IP] 192.168.0.103 [Port] 0 [Flags] 2 [Guid] 351065466 [EditorId] 351065466 [Version] 1048832 [Id] WindowsEditor(7,Nathans-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 85.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.29f1 (204d6dc9ae1c)
+[Subsystems] Discovering subsystems at path O:/AIE Unity/APPS/2021.3.29f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path O:/AIE Unity/Repo/WHAT!/WHAT!!/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Vendor:   NVIDIA
+    VRAM:     5980 MB
+    Driver:   31.0.15.3667
+Initialize mono
+Mono path[0] = 'O:/AIE Unity/APPS/2021.3.29f1/Editor/Data/Managed'
+Mono path[1] = 'O:/AIE Unity/APPS/2021.3.29f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'O:/AIE Unity/APPS/2021.3.29f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: O:/AIE Unity/APPS/2021.3.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003696 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 87.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.496 seconds
+Domain Reload Profiling:
+	ReloadAssembly (496ms)
+		BeginReloadAssembly (60ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (368ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (75ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (234ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (88ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (104ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003812 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image O:\AIE Unity\Repo\WHAT!\WHAT!!\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image O:\AIE Unity\Repo\WHAT!\WHAT!!\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 89.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.012 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1013ms)
+		BeginReloadAssembly (96ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (837ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (246ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (435ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (90ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (184ms)
+				ProcessInitializeOnLoadMethodAttributes (67ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4821 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (0.7 MB). Loaded Objects now: 5294.
+Memory consumption went from 204.4 MB to 203.7 MB.
+Total: 5.451900 ms (FindLiveObjects: 0.750300 ms CreateObjectMapping: 0.157400 ms MarkObjects: 4.075500 ms  DeleteObjects: 0.467600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1362749.138123 seconds.
+  path: Packages/com.verasl.water-system
+  artifactKey: Guid(90ae69ab0b7f45321bbf6086835038d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system using Guid(90ae69ab0b7f45321bbf6086835038d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee5a1f785b434aebf7bf0d7d2e1c610c') in 0.029249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.354993 seconds.
+  path: Packages/com.verasl.water-system/Shaders
+  artifactKey: Guid(6aab7b5e54a384c2790bfb04db9d7cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Shaders using Guid(6aab7b5e54a384c2790bfb04db9d7cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3245a24a951eb7de8b605396689bd4dd') in 0.095971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.498836 seconds.
+  path: Packages/com.verasl.water-system/Shaders/Graphs
+  artifactKey: Guid(88513df6dcc2e42048817fd8a57904b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Shaders/Graphs using Guid(88513df6dcc2e42048817fd8a57904b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd866d103e18d62585bafae8297242683') in 0.010161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.721093 seconds.
+  path: Packages/com.verasl.water-system/Scripts/Water.cs
+  artifactKey: Guid(b6edb8448c9b94f018953ca2a6fa5891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Scripts/Water.cs using Guid(b6edb8448c9b94f018953ca2a6fa5891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5d7276a93b8ed9edcf99493dfc5c913') in 0.030201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.185993 seconds.
+  path: Packages/com.verasl.water-system/SeaVisual.prefab
+  artifactKey: Guid(2cac2e60f3f6f2447ad9b550450f60ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/SeaVisual.prefab using Guid(2cac2e60f3f6f2447ad9b550450f60ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d911c8fa3fee6c71bf6ed250628ddb1') in 0.095360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 192.093298 seconds.
+  path: Packages/com.verasl.water-system/package.json
+  artifactKey: Guid(11a6c4f1e40e049829d2c6b1f393bf8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/package.json using Guid(11a6c4f1e40e049829d2c6b1f393bf8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af86e745e1e02e60291bc28abe3687fd') in 0.011575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.657553 seconds.
+  path: Packages/com.verasl.water-system/Textures
+  artifactKey: Guid(7d239908403484cb08c27667c913706b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Textures using Guid(7d239908403484cb08c27667c913706b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25b82bbb5167249ee074e4b34d269bc4') in 0.008813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.229263 seconds.
+  path: Packages/com.verasl.water-system/Textures/SurfaceSequence
+  artifactKey: Guid(ac449a7aac54248e496d456cbf1be212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Textures/SurfaceSequence using Guid(ac449a7aac54248e496d456cbf1be212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b30f7512206fe7cc27d10bdf6410005') in 0.009225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.223740 seconds.
+  path: Packages/com.verasl.water-system/Textures/PeakMap.tif
+  artifactKey: Guid(73acf520ecbde384a992281db16d291c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Textures/PeakMap.tif using Guid(73acf520ecbde384a992281db16d291c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5861373d5b3973641709fff19352b5be') in 0.018764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.485329 seconds.
+  path: Packages/com.verasl.water-system/Textures/DefaultFoamRamp.tif
+  artifactKey: Guid(4098762bce32f44b9b7c56531d1a988e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Textures/DefaultFoamRamp.tif using Guid(4098762bce32f44b9b7c56531d1a988e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1600b1e7c97b193af99d1bf449c2660') in 0.012796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.874539 seconds.
+  path: Packages/com.verasl.water-system/Shaders/Caustics.shader
+  artifactKey: Guid(90939d2e4b62841d29c136c866715501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Shaders/Caustics.shader using Guid(90939d2e4b62841d29c136c866715501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '321557f7a3a3de0d09362a5e3cc12f4a') in 0.011230 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.231105 seconds.
+  path: Packages/com.verasl.water-system/Shaders/CommonUtilities.hlsl
+  artifactKey: Guid(74c950d64fbb9465c9dd5b5d9800f9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Shaders/CommonUtilities.hlsl using Guid(74c950d64fbb9465c9dd5b5d9800f9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31c554836ad2ae3944e7abfdea93a9e') in 0.013692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.280526 seconds.
+  path: Packages/com.verasl.water-system/Shaders/GerstnerWaves.hlsl
+  artifactKey: Guid(218546c4603ef4cbd9ebc00e80bf714d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Shaders/GerstnerWaves.hlsl using Guid(218546c4603ef4cbd9ebc00e80bf714d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45a865b1f5762d85fcee7e15951d3436') in 0.009335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.305438 seconds.
+  path: Packages/com.verasl.water-system/Shaders/Water.shader
+  artifactKey: Guid(a94edd303261140cf9e6ce8c90d7a99a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Shaders/Water.shader using Guid(a94edd303261140cf9e6ce8c90d7a99a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1291bc421e3d64cac8566344f50aeb60') in 0.001953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.309513 seconds.
+  path: Packages/com.verasl.water-system/Shaders/WaterFXFoamOnly.shader
+  artifactKey: Guid(11c17326e513c47a6a4da8bc7e511417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Shaders/WaterFXFoamOnly.shader using Guid(11c17326e513c47a6a4da8bc7e511417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45c6704b7110341af01dd0d36c333a20') in 0.009300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.066986 seconds.
+  path: Packages/com.verasl.water-system/Shaders/Graphs/GestnerWaves.shadersubgraph
+  artifactKey: Guid(050d4204de13e4b108feb78488946f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Shaders/Graphs/GestnerWaves.shadersubgraph using Guid(050d4204de13e4b108feb78488946f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58a2c520436daa1559c540674cd7921c') in 0.011766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.499404 seconds.
+  path: Packages/com.verasl.water-system/Shaders/Graphs/Direction.shadersubgraph
+  artifactKey: Guid(b736aebad82ef413a938600669d91b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Shaders/Graphs/Direction.shadersubgraph using Guid(b736aebad82ef413a938600669d91b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4769a1e3afb24335e042e85b55510c5') in 0.009827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.640461 seconds.
+  path: Packages/com.verasl.water-system/Textures/WaterFoam.png
+  artifactKey: Guid(ca439406e806ecf44a9586510be9477d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Textures/WaterFoam.png using Guid(ca439406e806ecf44a9586510be9477d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '082ef8360191db99fb2c2fb2bd9469fc') in 0.017463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.669668 seconds.
+  path: Packages/com.verasl.water-system/Textures/WaterSurface.asset
+  artifactKey: Guid(2bf4e75081aab4b5f88bfb7069f598ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Textures/WaterSurface.asset using Guid(2bf4e75081aab4b5f88bfb7069f598ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0440cd367f14e579e121115c024f19b0') in 0.045839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.547036 seconds.
+  path: Packages/com.verasl.water-system/Textures/WaterSurface_atlas.tif
+  artifactKey: Guid(e5587917cd9a44d8a98a83b31e3f69c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Textures/WaterSurface_atlas.tif using Guid(e5587917cd9a44d8a98a83b31e3f69c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62df4e40c935f1b1273e6e7aa511e950') in 0.014317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.513658 seconds.
+  path: Packages/com.verasl.water-system/Textures/WaterSurface_single.tif
+  artifactKey: Guid(f395b7d64f44848c6a3cba1f1173fe90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.verasl.water-system/Textures/WaterSurface_single.tif using Guid(f395b7d64f44848c6a3cba1f1173fe90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0634db97150eb1493a8e6a8afd93368') in 0.014226 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003572 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image O:\AIE Unity\Repo\WHAT!\WHAT!!\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image O:\AIE Unity\Repo\WHAT!\WHAT!!\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.773 seconds
+Domain Reload Profiling:
+	ReloadAssembly (774ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (598ms)
+			LoadAssemblies (63ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (211ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (271ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (151ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4737 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.6 MB). Loaded Objects now: 5311.
+Memory consumption went from 200.2 MB to 199.6 MB.
+Total: 2.664600 ms (FindLiveObjects: 0.300400 ms CreateObjectMapping: 0.099400 ms MarkObjects: 2.018800 ms  DeleteObjects: 0.245500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002348 seconds.
+ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <47fc8c70fa834cbf8141d7c1a7589125>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <47fc8c70fa834cbf8141d7c1a7589125>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <d61464951b0243f18092630834a7bf18>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <d61464951b0243f18092630834a7bf18>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <d61464951b0243f18092630834a7bf18>:0 
+  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <1e8c82ffe64a4e1d8e997fa7e5933f70>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
+
+ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <47fc8c70fa834cbf8141d7c1a7589125>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <47fc8c70fa834cbf8141d7c1a7589125>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <d61464951b0243f18092630834a7bf18>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <d61464951b0243f18092630834a7bf18>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <d61464951b0243f18092630834a7bf18>:0 
+  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <1e8c82ffe64a4e1d8e997fa7e5933f70>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
+
+ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <47fc8c70fa834cbf8141d7c1a7589125>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <47fc8c70fa834cbf8141d7c1a7589125>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <d61464951b0243f18092630834a7bf18>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <d61464951b0243f18092630834a7bf18>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <d61464951b0243f18092630834a7bf18>:0 
+  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <1e8c82ffe64a4e1d8e997fa7e5933f70>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
+
+ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <47fc8c70fa834cbf8141d7c1a7589125>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <47fc8c70fa834cbf8141d7c1a7589125>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <d61464951b0243f18092630834a7bf18>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <d61464951b0243f18092630834a7bf18>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <d61464951b0243f18092630834a7bf18>:0 
+  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <1e8c82ffe64a4e1d8e997fa7e5933f70>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
+
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image O:\AIE Unity\Repo\WHAT!\WHAT!!\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image O:\AIE Unity\Repo\WHAT!\WHAT!!\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 60.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <47fc8c70fa834cbf8141d7c1a7589125>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <47fc8c70fa834cbf8141d7c1a7589125>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <d61464951b0243f18092630834a7bf18>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <d61464951b0243f18092630834a7bf18>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <d61464951b0243f18092630834a7bf18>:0 
+  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <1e8c82ffe64a4e1d8e997fa7e5933f70>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
+
+ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <47fc8c70fa834cbf8141d7c1a7589125>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <47fc8c70fa834cbf8141d7c1a7589125>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <d61464951b0243f18092630834a7bf18>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <d61464951b0243f18092630834a7bf18>:0 
+  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <d61464951b0243f18092630834a7bf18>:0 
+  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <1e8c82ffe64a4e1d8e997fa7e5933f70>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
+UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.768 seconds
+Domain Reload Profiling:
+	ReloadAssembly (769ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (586ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (187ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (283ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (60ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (135ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 551 unused Assets / (28.1 KB). Loaded Objects now: 4778.
+Memory consumption went from 161.8 MB to 161.8 MB.
+Total: 3.743500 ms (FindLiveObjects: 0.385500 ms CreateObjectMapping: 0.339400 ms MarkObjects: 2.853100 ms  DeleteObjects: 0.164600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 15 unused Assets / (21.9 KB). Loaded Objects now: 4778.
+Memory consumption went from 87.8 MB to 87.7 MB.
+Total: 2.580100 ms (FindLiveObjects: 0.299300 ms CreateObjectMapping: 0.206500 ms MarkObjects: 2.058100 ms  DeleteObjects: 0.015600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 299.396869 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/Letters FBX/Letter_K.fbx
+  artifactKey: Guid(d787807a8bd39e946895f8e07f7c79c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/Letters FBX/Letter_K.fbx using Guid(d787807a8bd39e946895f8e07f7c79c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '712baf8e3fa9b4312b5dc2a55cb3aac4') in 0.094184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 321.718067 seconds.
+  path: Assets/Scenes/Scripts
+  artifactKey: Guid(1b0414859487c3944affa0ba26c19e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Scripts using Guid(1b0414859487c3944affa0ba26c19e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc5d346d246d862cf88a97ca567b0985') in 0.009827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.868768 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e55ccaa32d8e5c1de03c07a5412c8c3c') in 0.010458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.795870 seconds.
+  path: Assets/Scenes/Tsunami Scene.unity
+  artifactKey: Guid(7759de288f5d4ee449a0ca5e2244944a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tsunami Scene.unity using Guid(7759de288f5d4ee449a0ca5e2244944a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bc4e7adf8899338abe0238378369bb6') in 0.010197 seconds 
