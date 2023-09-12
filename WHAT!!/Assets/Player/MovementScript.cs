@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovementScript : MonoBehaviour
 {
     [Header("Movement")]
-    private float moveSpeed = 0f;
+    private float moveSpeed = 5f;
     public float walkSpeed = 5f;
     public float sprintSpeed = 7f;
 
@@ -55,23 +55,32 @@ public class MovementScript : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.freezeRotation = true;
 
         startScale = transform.localScale.y;
 
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        Debug.Log(rb.velocity.magnitude);
         stateHandler();
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
         moveDirection = transform.forward * verticalInput + transform.right * horizontalInput;
-        RaycastHit x;
-        grounded = Physics.SphereCast(transform.position, 0.5f, Vector3.down, out x, playerHeight * 0.5f - 0.3f);
-        if (grounded)
+
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f);
+        rb.useGravity = !OnSlope();
+        if (OnSlope() && !exitingSlope)
         {
-            rb.AddForce(moveDirection.normalized * moveSpeed*5, ForceMode.Force);
+            rb.AddForce(GetSlopeMoveDirection() * moveSpeed, ForceMode.Force);
+            if (rb.velocity.y > 0)
+            {
+                rb.AddForce(Vector3.down, ForceMode.Force);
+            }
+        }
+        else if (grounded)
+        {
+            rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
             rb.drag = groundDrag;
         }
         else
@@ -80,19 +89,24 @@ public class MovementScript : MonoBehaviour
             rb.drag = 0f;
         }
 
-       
-        
-        Vector3 flatVel = new Vector3(rb.velocity.x, 0, rb.velocity.z);
-        if (flatVel.magnitude > 7)
+        if (OnSlope() && !exitingSlope)
         {
-            Vector3 limitedVel = flatVel.normalized * 7;
-            rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+            if (rb.velocity.magnitude > moveSpeed)
+            {
+                rb.velocity = rb.velocity.normalized * moveSpeed;
+            }
+        }
+        else
+        {
+            Vector3 flatVel = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+            if (flatVel.magnitude > moveSpeed)
+            {
+                Vector3 limitedVel = flatVel.normalized * moveSpeed;
+                rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+            }
         }
 
-    }
 
-    private void Update()
-    {
         if (Input.GetKey(jumpKey) && readyToJump && grounded)
         {
             readyToJump = false;
@@ -120,7 +134,7 @@ public class MovementScript : MonoBehaviour
         }
         if (tryingToUncrouch)
         {
-            if (!Physics.SphereCast(transform.position, 0.5f, Vector3.up, out hit, 2f) && transform.localScale.y < 1)
+            if (!Physics.SphereCast(transform.position, 0.5f, Vector3.up, out hit, 2f) && transform.localScale.y<1)
             {
                 tryingToUncrouch = false;
                 transform.localScale = new Vector3(transform.localScale.x, startScale, transform.localScale.z);
@@ -128,8 +142,8 @@ public class MovementScript : MonoBehaviour
                 playerHeight = 2f;
             }
         }
-    }
 
+    }
     public bool OnSlope()
     {
         maxSlopeAngle = 40f;
