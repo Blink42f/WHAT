@@ -39,21 +39,16 @@ public class VaultingandClimbing : MonoBehaviour
         rb.velocity = new Vector3(0f, 0f, 0f);
         bool finished = false;
         rb.useGravity = false;
+        float count = 0;
         while (finished == false)
         {
             
             yield return new WaitForSeconds(0.01f);
-            if (transform.position.y < originalPosY + (offset.y/2))
-            {
-                cameraPos.localRotation.SetAxisAngle(Vector3.right, cameraPos.localRotation.x + 0.1f);
-            }
-            else
-            {
-                cameraPos.localRotation.SetAxisAngle(Vector3.right, cameraPos.localRotation.x - 0.1f);
-            }
-
+            
             if (transform.position.y < originalPosY + offset.y)
             {
+                count ++;
+                cameraPos.RotateAroundLocal((Vector3.fwd * 2 + Vector3.right).normalized, 0.0005f);
                 rb.MovePosition(transform.position + new Vector3(0f, 0.1f, 0f)+ (transform.forward * 0.1f));
             }
             else 
@@ -62,8 +57,12 @@ public class VaultingandClimbing : MonoBehaviour
             }
             rb.velocity = beforeVelocity;
         }
-        cameraPos.transform.rotation = new Quaternion(0, 0, 0, 0f);
         rb.useGravity = true;
+        for (int i = 0; i < count; i++)
+        {
+            yield return new WaitForSeconds(0.01f);
+            cameraPos.RotateAroundLocal((Vector3.fwd * 2 + Vector3.right).normalized, -0.0005f);
+        }
     }
 
     public void ledgegrabCheck()

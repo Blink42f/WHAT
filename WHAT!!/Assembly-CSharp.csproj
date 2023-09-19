@@ -56,11 +56,11 @@
     <Analyzer Include="E:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Player\VaultingandClimbing.cs" />
     <Compile Include="Assets\Scripts\Water.cs" />
     <Compile Include="Assets\Player\CameraScript.cs" />
     <Compile Include="Assets\Player\MovementScript.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
-    <Compile Include="Assets\Player\VaultingandClimbing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
