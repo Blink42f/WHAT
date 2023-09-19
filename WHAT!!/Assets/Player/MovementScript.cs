@@ -11,8 +11,9 @@ public class MovementScript : MonoBehaviour
 
     [Header("Ground Check")]
     public float playerHeight = 2;
-    private bool grounded;
+    public bool grounded;
     public float groundDrag = 4f;
+    public bool hanging;
 
     private float horizontalInput;
     private float verticalInput;
@@ -69,7 +70,7 @@ public class MovementScript : MonoBehaviour
         moveDirection = transform.forward * verticalInput + transform.right * horizontalInput;
 
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f);
-        rb.useGravity = !OnSlope();
+        rb.useGravity = !OnSlope() && !hanging;
         if (OnSlope() && !exitingSlope)
         {
             rb.AddForce(GetSlopeMoveDirection() * moveSpeed, ForceMode.Force);
@@ -83,7 +84,7 @@ public class MovementScript : MonoBehaviour
             rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
             rb.drag = groundDrag;
         }
-        else
+        else if (!hanging)
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * airMultiplier, ForceMode.Force);
             rb.drag = 0f;
