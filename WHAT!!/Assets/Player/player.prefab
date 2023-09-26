@@ -35,8 +35,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1103243286497173492}
   - {fileID: 7815888873153827436}
+  - {fileID: 1103243286497173492}
   - {fileID: 4757579419556036147}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -48,7 +48,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631054409630033314}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 6ab4d97d82490c44eb1e29d2b0def7ad, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -151,7 +151,9 @@ MonoBehaviour:
   walkSpeed: 5
   sprintSpeed: 7
   playerHeight: 2
+  grounded: 0
   groundDrag: 4
+  hanging: 0
   maxSlopeAngle: 40
   crouchSpeed: 2.5
   crouchScale: 0.5
@@ -209,7 +211,7 @@ Transform:
   m_Children:
   - {fileID: 1391290609280689147}
   m_Father: {fileID: 2040397590895471601}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3820689505913661627
 GameObject:
@@ -240,7 +242,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2040397590895471601}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4065095649973996397
 GameObject:
