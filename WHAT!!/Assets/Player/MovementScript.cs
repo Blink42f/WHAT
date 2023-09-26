@@ -5,9 +5,10 @@ using UnityEngine;
 public class MovementScript : MonoBehaviour
 {
     [Header("Movement")]
-    private float moveSpeed = 5f;
-    public float walkSpeed = 5f;
-    public float sprintSpeed = 7f;
+    private float moveSpeed;
+    public float maxSpeed = 7f;
+    public float walkSpeed = 20f;
+    public float sprintSpeed = 30f;
 
     [Header("Ground Check")]
     public float playerHeight = 2;
@@ -62,7 +63,7 @@ public class MovementScript : MonoBehaviour
 
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         stateHandler();
         horizontalInput = Input.GetAxisRaw("Horizontal");
@@ -92,17 +93,17 @@ public class MovementScript : MonoBehaviour
 
         if (OnSlope() && !exitingSlope)
         {
-            if (rb.velocity.magnitude > moveSpeed)
+            if (rb.velocity.magnitude > maxSpeed)
             {
-                rb.velocity = rb.velocity.normalized * moveSpeed;
+                rb.velocity = rb.velocity.normalized * maxSpeed;
             }
         }
         else
         {
             Vector3 flatVel = new Vector3(rb.velocity.x, 0, rb.velocity.z);
-            if (flatVel.magnitude > moveSpeed)
+            if (flatVel.magnitude > maxSpeed)
             {
-                Vector3 limitedVel = flatVel.normalized * moveSpeed;
+                Vector3 limitedVel = flatVel.normalized * maxSpeed;
                 rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
             }
         }
