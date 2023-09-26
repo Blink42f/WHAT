@@ -135,7 +135,7 @@ public class MovementScript : MonoBehaviour
         }
         if (tryingToUncrouch)
         {
-            if (!Physics.SphereCast(transform.position, 0.5f, Vector3.up, out hit, 2f) && transform.localScale.y<1)
+            if (!Physics.SphereCast(transform.position, 0.5f, Vector3.up, out hit, 2f) && transform.localScale.y<1 && !Input.GetKey(crouchKey))
             {
                 tryingToUncrouch = false;
                 transform.localScale = new Vector3(transform.localScale.x, startScale, transform.localScale.z);
@@ -160,7 +160,7 @@ public class MovementScript : MonoBehaviour
         return Vector3.ProjectOnPlane(moveDirection, slopeHit.normal).normalized;
     }
 
-    private void Jump()
+    public void Jump()
     {
         exitingSlope = true;
         rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);

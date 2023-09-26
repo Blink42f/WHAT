@@ -21,7 +21,7 @@ public class VaultingandClimbing : MonoBehaviour
     public void vaultingCheck()
     {
         RaycastHit result;
-        if (Physics.Raycast(vaultCheck.transform.position, Vector3.down, out result, 1.1f) && !movementScript.OnSlope() && Input.GetKey(KeyCode.W))
+        if (Physics.Raycast(vaultCheck.transform.position, Vector3.down, out result, 1.1f) && !movementScript.OnSlope() && Input.GetKey(KeyCode.W) && movementScript.state != MovementScript.movementState.crouching)
         {
             Vector3 offset = new Vector3(0f, 1.6f, 0f) - (vaultCheck.transform.position - result.point);
             StartCoroutine(vault(offset));
@@ -62,11 +62,10 @@ public class VaultingandClimbing : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
             cameraPos.RotateAroundLocal((Vector3.fwd * 2 + Vector3.right).normalized, -0.0005f);
         }
-        movementScript.hanging = false;
 
     }
-
 public void ledgegrabCheck()
+
     {
         RaycastHit result;
         if (!movementScript.hanging&&Physics.Raycast(ledgeCheck.transform.position, Vector3.down, out result, 1f) && !movementScript.grounded && Input.GetKey(KeyCode.Space) && timeSinceHang>hangCooldown)
@@ -79,6 +78,10 @@ public void ledgegrabCheck()
             timeSinceHang = 0f;
             Vector3 offset = new Vector3(0f, 1.6f, 0f) - (ledgeCheck.transform.position - result.point);
             jumpOnLedge(offset);
+        }
+        else if (!Physics.Raycast(ledgeCheck.transform.position, Vector3.down, out result, 1f) && Input.GetKey(KeyCode.Space) && timeSinceHang > hangCooldown && movementScript.hanging)
+        {
+            jumpOffLedge();
         }
         timeSinceHang += Time.deltaTime;
     }
@@ -93,6 +96,15 @@ public void ledgegrabCheck()
     public void jumpOnLedge(Vector3 offset)
     {
         Debug.Log("Jump on Ledge");
+        movementScript.hanging = false;
         StartCoroutine(vault(offset));
+    }
+
+    public void jumpOffLedge()
+    {
+        Debug.Log("Jump off Ledge");
+        movementScript.Jump();
+        rb.AddForce(transform.forward*3,ForceMode.Impulse);
+        movementScript.hanging = false;
     }
 }
