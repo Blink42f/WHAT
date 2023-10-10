@@ -10,6 +10,8 @@ public class MovementScript : MonoBehaviour
     public float walkSpeed = 20f;
     public float sprintSpeed = 30f;
 
+    public bool onLadder = false;
+
     [Header("Ground Check")]
     public float playerHeight = 2;
     public bool grounded;
@@ -24,9 +26,9 @@ public class MovementScript : MonoBehaviour
     private RaycastHit slopeHit;
     private bool exitingSlope;
 
-
+    public bool vaulting;
     [Header("Crouching")]
-    public float crouchSpeed = 2.5f;
+    public float crouchSpeed = 15f;
     public float crouchScale = 0.5f;
     private bool tryingToUncrouch = false;
     private float startScale;
@@ -48,7 +50,8 @@ public class MovementScript : MonoBehaviour
         walking,
         sprinting,
         air,
-        crouching
+        crouching,
+        ladder
     }
 
     private Vector3 moveDirection;
@@ -69,11 +72,16 @@ public class MovementScript : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
         moveDirection = transform.forward * verticalInput + transform.right * horizontalInput;
-
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f);
-        rb.useGravity = !OnSlope() && !hanging;
-        if (OnSlope() && !exitingSlope)
+        RaycastHit hits;
+        grounded = Physics.SphereCast(transform.position, 0.45f, Vector3.down, out hits, playerHeight * 0.5f -0.4f);
+        rb.useGravity = !OnSlope() && !hanging && !vaulting && !onLadder;
+        if (onLadder && grounded)
         {
+            onLadder = false;
+        }
+        if (OnSlope() && !exitingSlope && !vaulting)
+        {
+            rb.drag = groundDrag;
             rb.AddForce(GetSlopeMoveDirection() * moveSpeed, ForceMode.Force);
             if (rb.velocity.y > 0)
             {
@@ -82,7 +90,11 @@ public class MovementScript : MonoBehaviour
         }
         else if (grounded)
         {
-            rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * moveSpeed , ForceMode.Force);
+            rb.drag = groundDrag;
+        }
+        else if (onLadder)
+        {
             rb.drag = groundDrag;
         }
         else if (!hanging)
@@ -109,14 +121,20 @@ public class MovementScript : MonoBehaviour
         }
 
 
-        if (Input.GetKey(jumpKey) && readyToJump && grounded)
+        if (Input.GetKey(jumpKey) && readyToJump && grounded && !onLadder)
         {
             readyToJump = false;
             Jump();
             Invoke("resetJump", jumpCooldown);
         }
-        if (Input.GetKeyDown(crouchKey))
+
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(crouchKey) && !onLadder)
         {
+            Debug.Log(true);
             tryingToUncrouch = false;
             transform.localScale = new Vector3(transform.localScale.x, crouchScale, transform.localScale.z);
             rb.AddForce(Vector3.down * 3f, ForceMode.Impulse);
@@ -136,7 +154,7 @@ public class MovementScript : MonoBehaviour
         }
         if (tryingToUncrouch)
         {
-            if (!Physics.SphereCast(transform.position, 0.5f, Vector3.up, out hit, 2f) && transform.localScale.y<1 && !Input.GetKey(crouchKey))
+            if (!Physics.SphereCast(transform.position, 0.5f, Vector3.up, out hit, 2f) && transform.localScale.y < 1 && !Input.GetKey(crouchKey))
             {
                 tryingToUncrouch = false;
                 transform.localScale = new Vector3(transform.localScale.x, startScale, transform.localScale.z);
@@ -144,8 +162,8 @@ public class MovementScript : MonoBehaviour
                 playerHeight = 2f;
             }
         }
-
     }
+
     public bool OnSlope()
     {
         maxSlopeAngle = 40f;
@@ -201,6 +219,11 @@ public class MovementScript : MonoBehaviour
         else
         {
             state = movementState.air;
+        }
+        if (onLadder)
+        {
+            state = movementState.ladder;
+            moveSpeed = 0f;
         }
     }
 }

@@ -14,11 +14,12 @@ GameObject:
   - component: {fileID: 7097839304013673210}
   - component: {fileID: 2356025823049422819}
   - component: {fileID: 8810951066920569394}
+  - component: {fileID: 5195650711642559930}
   - component: {fileID: 3292330646639863145}
   - component: {fileID: 3999985602048344027}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,9 +134,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c2b2285a01ec8f4f88ba580806cd8f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xSensitivity: 400
-  ySensitivity: 400
+  xSensitivity: 5
+  ySensitivity: 5
   camera: {fileID: 3415369631024748906}
+--- !u!114 &5195650711642559930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631054409630033314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593035a289c45004bb0e6d56a4253583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onLadder: 0
+  movementScript: {fileID: 3292330646639863145}
+  rb: {fileID: 2356025823049422819}
 --- !u!114 &3292330646639863145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,14 +164,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0060ab703a1e6e849b2f8db20ca8277f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
-  sprintSpeed: 7
+  maxSpeed: 7
+  walkSpeed: 20
+  sprintSpeed: 30
+  onLadder: 0
   playerHeight: 2
   grounded: 0
   groundDrag: 4
   hanging: 0
   maxSlopeAngle: 40
-  crouchSpeed: 2.5
+  vaulting: 0
+  crouchSpeed: 15
   crouchScale: 0.5
   jumpForce: 6
   airMultiplier: 0.3
