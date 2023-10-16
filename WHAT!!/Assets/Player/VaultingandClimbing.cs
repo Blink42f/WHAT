@@ -12,17 +12,22 @@ public class VaultingandClimbing : MonoBehaviour
     private float hangCooldown = 0.1f;
     private float timeSinceHang = 1f;
 
+    private float vaultCoolTime = 0.2f;
+    private float timeSinceVault = 0f;
+
     void Update()
     {
         vaultingCheck();
         ledgegrabCheck();
+        timeSinceVault += Time.deltaTime;
     }
 
     public void vaultingCheck()
     {
         RaycastHit result;
-        if (Physics.Raycast(vaultCheck.transform.position, Vector3.down, out result, 1.1f) && !movementScript.OnSlope() && Input.GetKey(KeyCode.W) && movementScript.state != MovementScript.movementState.crouching)
+        if (timeSinceVault>vaultCoolTime && Physics.Raycast(vaultCheck.transform.position, Vector3.down, out result, 1.1f) && !movementScript.OnSlope() && Input.GetKey(KeyCode.W) && movementScript.state != MovementScript.movementState.crouching)
         {
+            timeSinceVault = 0f;
             Vector3 offset = new Vector3(0f, 1.6f, 0f) - (vaultCheck.transform.position - result.point);
             StartCoroutine(vault(offset));
         }
@@ -30,6 +35,8 @@ public class VaultingandClimbing : MonoBehaviour
 
     public IEnumerator vault(Vector3 offset)
     {
+        movementScript.vaulting = true;
+        movementScript.hanging = false;
         float originalPosY = transform.position.y;
         Vector3 beforeVelocity = rb.velocity;
         rb.velocity = new Vector3(0f, 0f, 0f);
@@ -38,25 +45,25 @@ public class VaultingandClimbing : MonoBehaviour
         float count = 0;
         while (finished == false)
         {
-            
             yield return new WaitForSeconds(0.01f);
-            
-            if (transform.position.y < originalPosY + offset.y)
+            if (transform.position.y < originalPosY + offset.y )
             {
                 if (Mathf.Abs(cameraPos.localRotation.z) < 0.1f)
                 {
                     count++;
                     cameraPos.RotateAroundLocal((Vector3.fwd * 2 + Vector3.right).normalized, 0.0005f);
                 }
-                rb.MovePosition(transform.position + new Vector3(0f, 0.1f, 0f)+ (transform.forward * 0.1f));
+                rb.MovePosition(transform.position + new Vector3(0f, 0.1f, 0f)+ (transform.forward*0.1f));
             }
             else 
             {
                 finished = true;
             }
-            rb.velocity = beforeVelocity;
+            
         }
         rb.useGravity = true;
+        rb.velocity = beforeVelocity;
+        movementScript.vaulting = false;
         for (int i = 0; i < count; i++)
         {
             yield return new WaitForSeconds(0.01f);
@@ -87,22 +94,18 @@ public void ledgegrabCheck()
     }
 
     public void grabLedge()
-    {
-        Debug.Log("on Ledge");
+    { 
         movementScript.hanging = true;                            
         rb.velocity = Vector3.zero;
     }
 
     public void jumpOnLedge(Vector3 offset)
     {
-        Debug.Log("Jump on Ledge");
-        movementScript.hanging = false;
         StartCoroutine(vault(offset));
     }
 
     public void jumpOffLedge()
     {
-        Debug.Log("Jump off Ledge");
         movementScript.Jump();
         rb.AddForce(transform.forward*3,ForceMode.Impulse);
         movementScript.hanging = false;

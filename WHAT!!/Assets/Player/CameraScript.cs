@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    public float xSensitivity = 400f;
-    public float ySensitivity = 400f;
+    public float xSensitivity = 0.1f;
+    public float ySensitivity = 0.1f;
     public GameObject camera;
     private float yRotation;
     private float xRotation;
@@ -18,8 +18,8 @@ public class CameraScript : MonoBehaviour
 
     private void Update()
     {
-        float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * xSensitivity;
-        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * ySensitivity;
+        float mouseX = Input.GetAxisRaw("Mouse X") * xSensitivity;
+        float mouseY = Input.GetAxisRaw("Mouse Y")* ySensitivity;
         xRotation -= mouseY;
         yRotation += mouseX;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
