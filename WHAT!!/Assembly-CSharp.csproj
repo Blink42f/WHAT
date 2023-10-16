@@ -64,6 +64,8 @@
     <Compile Include="Assets\Player\MovementScript.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\NewScene.cs" />
+    <Compile Include="Assets\Player\LadderScript.cs" />
+    <Compile Include="Assets\Player\LadderHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
