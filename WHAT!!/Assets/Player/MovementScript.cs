@@ -121,7 +121,7 @@ public class MovementScript : MonoBehaviour
         }
 
 
-        if (Input.GetKey(jumpKey) && readyToJump && grounded && !onLadder)
+        if (Input.GetKey(jumpKey) && readyToJump && grounded)// && !onLadder)
         {
             readyToJump = false;
             Jump();
