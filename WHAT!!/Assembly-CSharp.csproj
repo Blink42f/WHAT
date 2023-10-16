@@ -59,10 +59,28 @@
     <Compile Include="Assets\Player\VaultingandClimbing.cs" />
     <Compile Include="Assets\Player\LadderHandler.cs" />
     <Compile Include="Assets\Scripts\Water.cs" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <Compile Include="Assets\SceneChanger.cs" />
+    <Compile Include="Assets\Scripts\SceneChanger.cs" />
+=======
     <Compile Include="Assets\Player\LadderScript.cs" />
+>>>>>>> origin/main
     <Compile Include="Assets\Player\CameraScript.cs" />
     <Compile Include="Assets\Player\MovementScript.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
+    <Compile Include="Assets\Scripts\NewScene.cs" />
+    <Compile Include="Assets\Player\LadderScript.cs" />
+    <Compile Include="Assets\Player\LadderHandler.cs" />
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
+=======
+    <Compile Include="Assets\Player\CameraScript.cs" />
+    <Compile Include="Assets\Player\MovementScript.cs" />
+    <Compile Include="Assets\Scripts\Timer.cs" />
+>>>>>>> parent of 2324c1e (Changes)
+>>>>>>> origin/main
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
