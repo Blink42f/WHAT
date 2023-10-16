@@ -8,4 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: fe727df98ca7a7c489b0c9e9bbda5f5b
+  - enabled: 1
+    path: Assets/Scenes/Play Menu.unity
+    guid: 9427d2585bbfb204b9a23f0e69f7a6be
+  - enabled: 1
+    path: Assets/Scenes/Tsunami Scene.unity
+    guid: 7759de288f5d4ee449a0ca5e2244944a
+  - enabled: 1
+    path: Assets/Scenes/Audio Menu.unity
+    guid: 1615afba9d233dc4aa3517b411a5dfcb
+  - enabled: 1
+    path: Assets/Scenes/Controls Menu.unity
+    guid: 3c1a79332e3fd124988b3a6ca5e76fdf
+  - enabled: 1
+    path: Assets/Scenes/Options Menu.unity
+    guid: a2e497fa63fa8074f9edc3f6e05fff8f
+  - enabled: 1
+    path: Assets/Scenes/Pause Menu.unity
+    guid: 2409313d6a139b44cad1563ed4df7042
   m_configObjects: {}

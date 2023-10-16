@@ -22,12 +22,20 @@ public class LadderHandler : MonoBehaviour
         }
         if (onLadder)
         {
+<<<<<<< HEAD
             rb.velocity = new Vector3(rb.velocity.x, Input.GetAxis("Vertical")*2, rb.velocity.z)+transform.right*Input.GetAxis("Horizontal")*0.1f;
+=======
+            //rb.velocity = new Vector3(rb.velocity.x, Input.GetAxis("Vertical")*2, rb.velocity.z)+transform.right*Input.GetAxis("Horizontal")*0.1f;
+>>>>>>> origin/main
         }
     }
 
     public void jumpOffLadder()
     {
+<<<<<<< HEAD
         rb.velocity = new Vector3(0, 0, 0);
+=======
+        //rb.velocity = new Vector3(0, 0, 0);
+>>>>>>> origin/main
     }
 }

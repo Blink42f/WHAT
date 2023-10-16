@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C2F84F31-8FF7-3356-231D-D7D0FE14770D}</ProjectGuid>
+    <ProjectGuid>{1077CC6A-807B-4E26-2EF0-E328EE162A0C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Unity.ProBuilder</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2021_3_29;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2021_3_29;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;USING_PARTICLE_SYSTEM;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -56,40 +56,121 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Player\VaultingandClimbing.cs" />
-    <Compile Include="Assets\Player\LadderHandler.cs" />
-    <Compile Include="Assets\Scripts\Water.cs" />
-    <Compile Include="Assets\SceneChanger.cs" />
-    <Compile Include="Assets\Player\LadderScript.cs" />
-    <Compile Include="Assets\Scripts\SceneChanger.cs" />
-    <Compile Include="Assets\Player\CameraScript.cs" />
-    <Compile Include="Assets\Player\MovementScript.cs" />
-    <Compile Include="Assets\Scripts\Timer.cs" />
-    <Compile Include="Assets\Scripts\NewScene.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\ProBuilderMeshFunction.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\ProBuilderSnapping.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\MeshUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Submesh.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\IntVec3.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Shapes\Cylinder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Math.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Face.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\Triangulation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\MeshValidation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\ShapeGenerator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Shapes\Pipe.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Shapes\Sprite.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\ObjectPool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Shapes\ProBuilderShape.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Changelog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\HandleConstraint2D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\SemVer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\ColorPalette.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\SharedVertex.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\ElementSelection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\WingedEdgeEnumerator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\ColorUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\MeshTransform.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\VertexEditing.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\BezierShape.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\RaycastHit.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\TransformUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\SimpleTuple.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\ShapeFactory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\ProBuilderMeshSelection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\MeshImporter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\PolyShape.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Shapes\Stairs.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\UnwrapParameters.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\ArrayUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Shapes\Plane.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\SerializationUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\CombineMeshes.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\InternalMeshUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Shapes\Cube.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Log.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\VertexPositioning.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Shapes\Shape.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\EntityBehaviour.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\SelectionPicker.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\VectorMask.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\UV\UVEditing.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\SelectPathFaces.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\SelectionPickerRendererStandard.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\SurfaceTopology.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\ProBuilderMesh.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\ColliderBehaviour.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Projection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\ActionResult.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\PreferenceDictionary.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Shapes\Door.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\IntVec2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\MaterialUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\WingedEdge.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Edge.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Shapes\Cone.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\BuiltinMaterials.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\MeshHandles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\UvUnwrapping.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Shapes\Sphere.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\FaceRebuildData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\HandleOrientation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\InternalUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Shapes\Torus.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Normal.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Entity.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\EdgeLookup.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Bounds2D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\ExtrudeElements.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\HandleUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Smoothing.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\QuadUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Clipping.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\PivotPoint.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Spline.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\IntVec4.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\TriggerBehaviour.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\SelectionPickerRenderer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Transform2D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\SelectionPickerSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\IHasDefault.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Triangle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\UV\TextureStitching.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\EdgeUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\AutoUnwrapSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\BezierPoint.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Vertex.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\Normals.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\Bevel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\ConnectElements.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\VectorHash.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\UvAutoManualConversion.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\PreferenceKeys.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\ProGridsIgnoreSnap.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\ProBuilderEnum.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\MergeElements.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\AppendElements.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\SelectionModifierBehaviour.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Shapes\Arch.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\SelectionPickerRendererHDRP.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Core\MeshHandle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\DeleteElements.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\MeshOperations\Subdivision.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Shapes\Prism.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\POLYGON city pack\Read_me.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Library\PackageCache\com.unity.probuilder@5.1.1\Runtime\Unity.ProBuilder.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -337,6 +418,33 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>O:\AIE Unity\APPS\2021.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>O:\AIE Unity\APPS\2021.3.29f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>O:\AIE Unity\APPS\2021.3.29f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
@@ -712,129 +820,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
-      <Project>{E677A556-1E5A-8060-E092-AF2DF198A07D}</Project>
-      <Name>Unity.VisualScripting.Flow.Editor</Name>
+    <ProjectReference Include="Unity.ProBuilder.Poly2Tri.csproj">
+      <Project>{AEA4A72F-E901-75C0-0EA2-93F574AF980D}</Project>
+      <Name>Unity.ProBuilder.Poly2Tri</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.AI.Navigation.Updater.csproj">
-      <Project>{8C9B9763-CD89-BB9A-22C5-9845B1D80488}</Project>
-      <Name>Unity.AI.Navigation.Updater</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.AI.Navigation.Editor.ConversionSystem.csproj">
-      <Project>{9DB2EEB9-507D-ACC4-CB37-95CBA3C9355C}</Project>
-      <Name>Unity.AI.Navigation.Editor.ConversionSystem</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{0B967B53-2546-120E-B539-A2C5840E1563}</Project>
-      <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{15BB64F1-8CD5-B511-37B6-9F7EB63FC6ED}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{987FD500-BBDF-F5F9-AB72-2FFD78CAD51B}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Performance.Profile-Analyzer.Editor.csproj">
-      <Project>{79F03DEF-8405-CA9E-375D-F9AB82D8B235}</Project>
-      <Name>Unity.Performance.Profile-Analyzer.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj">
-      <Project>{45FCC08F-E454-3B88-DCDE-D741AE54FC32}</Project>
-      <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{4BBBC0E0-1A7A-FCC8-71F3-05A19F1BB5D9}</Project>
-      <Name>Unity.Timeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
-      <Project>{FAE67448-3D66-8FDD-250A-34D6C172963B}</Project>
-      <Name>Unity.VisualScripting.Core.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{90F116C0-FCBF-AB2F-EB8D-D38AE2CB924E}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
-      <Project>{D2BD5A83-86F9-0B3D-BC46-DB059B28C3FA}</Project>
-      <Name>Unity.VisualScripting.State.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
-      <Project>{3FDE1B1F-C305-A9DE-10B9-5FD8148B7ACC}</Project>
-      <Name>Unity.VisualScripting.SettingsProvider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ProBuilder.AddOns.Editor.csproj">
-      <Project>{658B426A-6B35-DAA6-936B-D0F4FFBE17A8}</Project>
-      <Name>Unity.ProBuilder.AddOns.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ProBuilder.csproj">
-      <Project>{1077CC6A-807B-4E26-2EF0-E328EE162A0C}</Project>
-      <Name>Unity.ProBuilder</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj">
-      <Project>{9F5BDB6C-3312-A71E-C8D3-C07C21EA74E3}</Project>
-      <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ProBuilder.Editor.csproj">
-      <Project>{B16C81B5-B958-0F08-3692-809F56C9F414}</Project>
-      <Name>Unity.ProBuilder.Editor</Name>
+    <ProjectReference Include="Unity.ProBuilder.KdTree.csproj">
+      <Project>{3EC152A2-5300-7226-B88C-89C9F8603118}</Project>
+      <Name>Unity.ProBuilder.KdTree</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{C0C2CC4E-8E6A-4C79-3696-F8661C6ACC15}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{1CFAC2BD-FB51-1281-8A40-0546D2ABE514}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{3459EBC2-7634-A405-AD35-E0F0A7B2706F}</Project>
-      <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
-      <Project>{3D8E3C28-7A93-7EE8-81B0-73994A528056}</Project>
-      <Name>Unity.VisualScripting.Flow</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{47130415-6852-7816-DBAA-576337F6EE9D}</Project>
       <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Core.csproj">
-      <Project>{09C5D5A4-CA10-54C2-0FDF-96998D757C43}</Project>
-      <Name>Unity.VisualScripting.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
-      <Project>{B5808845-A270-F135-C2FC-B1B1E7427654}</Project>
-      <Name>Unity.EditorCoroutines.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ProBuilder.AssetIdRemapUtility.csproj">
-      <Project>{0CFF09D8-59A7-E96D-67F0-2D00BADA106F}</Project>
-      <Name>Unity.ProBuilder.AssetIdRemapUtility</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
-      <Project>{48330E49-67F5-7049-7085-88C48AA57EC1}</Project>
-      <Name>Unity.VisualScripting.Shared.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{261ACFC2-13BF-48D5-DDF0-E8229EC981F4}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.AI.Navigation.csproj">
-      <Project>{C554D206-BF46-9E51-D2A5-2B3CA0D0F238}</Project>
-      <Name>Unity.AI.Navigation</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.AI.Navigation.Editor.csproj">
-      <Project>{7296B474-39E0-2494-41CA-96CBF81A0B95}</Project>
-      <Name>Unity.AI.Navigation.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.csproj">
-      <Project>{3BFE9064-1182-4494-0E58-A4C586A1C2D8}</Project>
-      <Name>Unity.TestTools.CodeCoverage.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.State.csproj">
-      <Project>{22664811-DC81-8E52-DE41-C3ABBEFC0202}</Project>
-      <Name>Unity.VisualScripting.State</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
