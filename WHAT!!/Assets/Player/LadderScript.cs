@@ -35,8 +35,11 @@ public class LadderScript : MonoBehaviour
         {
             LadderHandler player;
             other.TryGetComponent<LadderHandler>(out player);
-            player.onLadder = false;
-            player.jumpOffLadder();
+            if (player.onLadder == true)
+            {
+                player.jumpOffLadder();
+                player.onLadder = false;
+            }
             MovementScript playerMovement;
             other.TryGetComponent<MovementScript>(out playerMovement);
             playerMovement.onLadder = false ;

@@ -22,10 +22,13 @@ public class LadderHandler : MonoBehaviour
         }
         if (onLadder)
         {
-
-            rb.velocity = new Vector3(rb.velocity.x, Input.GetAxis("Vertical")*2, rb.velocity.z)+transform.right*Input.GetAxis("Horizontal")*0.1f;
-
-            
+            rb.velocity = new Vector3(rb.velocity.x, Input.GetAxis("Vertical")*2f, rb.velocity.z)+transform.right*Input.GetAxis("Horizontal")*0.01f;
+            RaycastHit hit;
+            if (!Physics.SphereCast(transform.position, 0.2f, transform.forward,out hit, 1f) && Input.GetKey(KeyCode.W))
+            {
+                launchOffLadder();
+                    movementScript.onLadder = false;
+            }
         }
     }
 
@@ -33,6 +36,12 @@ public class LadderHandler : MonoBehaviour
     {
 
         rb.velocity = new Vector3(0, 0, 0);
+
+    }
+    public void launchOffLadder()
+    {
+
+        rb.velocity = transform.forward*5;
 
     }
 }

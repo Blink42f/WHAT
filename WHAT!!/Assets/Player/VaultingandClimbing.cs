@@ -12,7 +12,7 @@ public class VaultingandClimbing : MonoBehaviour
     private float hangCooldown = 0.1f;
     private float timeSinceHang = 1f;
 
-    private float vaultCoolTime = 0.2f;
+    private float vaultCoolTime = 1f;
     private float timeSinceVault = 0f;
 
     void Update()
@@ -25,11 +25,14 @@ public class VaultingandClimbing : MonoBehaviour
     public void vaultingCheck()
     {
         RaycastHit result;
-        if (timeSinceVault>vaultCoolTime && Physics.Raycast(vaultCheck.transform.position, Vector3.down, out result, 1.1f) && !movementScript.OnSlope() && Input.GetKey(KeyCode.W) && movementScript.state != MovementScript.movementState.crouching)
-        {
-            timeSinceVault = 0f;
-            Vector3 offset = new Vector3(0f, 1.6f, 0f) - (vaultCheck.transform.position - result.point);
-            StartCoroutine(vault(offset));
+        if (!movementScript.onLadder&& timeSinceVault>vaultCoolTime && Physics.Raycast(vaultCheck.transform.position, Vector3.down, out result, 1.1f) && !movementScript.OnSlope() && Input.GetKey(KeyCode.W) && movementScript.state != MovementScript.movementState.crouching)
+        {  
+            if (!result.collider.gameObject.CompareTag("Ladder"))
+            {
+                timeSinceVault = 0f;
+                Vector3 offset = new Vector3(0f, 1.6f, 0f) - (vaultCheck.transform.position - result.point);
+                StartCoroutine(vault(offset));
+            }
         }
     }
 
@@ -51,7 +54,7 @@ public class VaultingandClimbing : MonoBehaviour
                 if (Mathf.Abs(cameraPos.localRotation.z) < 0.1f)
                 {
                     count++;
-                    cameraPos.RotateAroundLocal((Vector3.fwd * 2 + Vector3.right).normalized, 0.0005f);
+                    cameraPos.RotateAroundLocal((Vector3.fwd * 2 + Vector3.right).normalized, 0.005f);
                 }
                 rb.MovePosition(transform.position + new Vector3(0f, 0.1f, 0f)+ (transform.forward*0.1f));
             }
@@ -67,7 +70,7 @@ public class VaultingandClimbing : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             yield return new WaitForSeconds(0.01f);
-            cameraPos.RotateAroundLocal((Vector3.fwd * 2 + Vector3.right).normalized, -0.0005f);
+            cameraPos.RotateAroundLocal((Vector3.fwd * 2 + Vector3.right).normalized, -0.005f);
         }
 
     }
