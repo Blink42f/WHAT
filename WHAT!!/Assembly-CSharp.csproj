@@ -63,6 +63,9 @@
     <Compile Include="Assets\Player\CameraScript.cs" />
     <Compile Include="Assets\Player\MovementScript.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
+    <Compile Include="Assets\Scripts\SceneChanger.cs" />
+    <Compile Include="Assets\Scripts\ButtonSceneChanger.cs" />
+    <Compile Include="Assets\LockCursor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
