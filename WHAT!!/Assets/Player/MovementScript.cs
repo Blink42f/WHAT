@@ -77,7 +77,7 @@ public class MovementScript : MonoBehaviour
         rb.useGravity = !OnSlope() && !hanging && !vaulting && !onLadder;
         if (onLadder && grounded)
         {
-            onLadder = false;
+            onLadder = true;
         }
         if (OnSlope() && !exitingSlope && !vaulting)
         {
